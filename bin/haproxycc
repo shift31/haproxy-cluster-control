@@ -1,0 +1,17 @@
+#!/usr/bin/env php
+<?php
+
+use Illuminate\Console\Application;
+use Shift31\Haproxy\CheckCommand;
+use Shift31\Haproxy\SetCommand;
+
+require __DIR__.'/../src/vendor/autoload.php';
+
+$app = new Application('HAProxy Cluster Control', '0.1.0');
+
+$app->addCommands([
+    new CheckCommand(),
+    new SetCommand()
+]);
+
+$app->run();

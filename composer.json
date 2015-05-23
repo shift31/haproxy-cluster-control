@@ -1,0 +1,29 @@
+{
+  "name": "shift31/haproxy-cluster-control",
+  "description": "CLI for managing clusters of haproxy servers via HTTP",
+  "require": {
+    "php": ">=5.4",
+    "shift31/haproxy-client": "dev-master",
+    "illuminate/console": "~4",
+    "illuminate/support": "~4",
+    "monolog/monolog": "@stable"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Shift 31",
+      "email": "code@shift31.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Shift31\\Haproxy\\": "src/Haproxy"
+    }
+  },
+  "config": {
+    "bin-dir": "bin",
+    "vendor-dir": "src/vendor"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}

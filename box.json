@@ -1,0 +1,22 @@
+{
+  "chmod": "0755",
+  "directories": [
+    "src"
+  ],
+  "finder": [
+    {
+      "name": "*.php",
+      "exclude": [
+        "Test",
+        "test",
+        "Tests",
+        "tests",
+        "test-suite"
+      ],
+      "in": "src/vendor"
+    }
+  ],
+  "main": "bin/haproxycc",
+  "output": "haproxycc.phar",
+  "stub": true
+}
